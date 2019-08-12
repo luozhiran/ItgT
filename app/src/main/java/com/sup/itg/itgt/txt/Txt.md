@@ -1,6 +1,6 @@
 #### 常用方法
 
-> 自定义方法常用
+> 自定义控件常用代码
 ```markdown
         int wMode = MeasureSpec.getMode(widthMeasureSpec);
         int wSize = MeasureSpec.getSize(widthMeasureSpec);
