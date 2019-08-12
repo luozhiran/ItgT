@@ -16,6 +16,7 @@ import com.sup.itg.itgt.dir1.MatrixActivity;
 import com.sup.itg.itgt.dir2.GestureActivity;
 import com.sup.itg.itgt.dir3.SortActivity;
 import com.sup.itg.itgt.dir4.InjectActivity;
+import com.sup.itg.itgt.dir5.RadarActivity;
 import com.sup.itg.viewinject.ContentView;
 import com.sup.itg.viewinject.ViewInject;
 import com.sup.itg.viewinject.ViewInjectUtils;
@@ -59,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
                 case "inject":
                     data.resId = R.mipmap.ic_launcher;
                     break;
+                case "radar":
+                    data.resId = R.mipmap.ic_launcher;
+                    break;
             }
         }
         mMainAdapter.addData(homeDataList);
@@ -79,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "inject":
                         gotoActivity(InjectActivity.class);
+                        break;
+                    case "radar":
+                        gotoActivity(RadarActivity.class);
                         break;
                 }
             }

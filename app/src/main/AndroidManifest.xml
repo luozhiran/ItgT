@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dir4.InjectActivity"></activity>
+        <activity android:name=".dir5.RadarActivity"></activity>
+        <activity android:name=".dir4.InjectActivity" />
         <activity android:name=".dir3.SortActivity" />
         <activity android:name=".dir2.GestureActivity" />
         <activity android:name=".dir1.MatrixActivity" />

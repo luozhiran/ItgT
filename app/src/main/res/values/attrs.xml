@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RadarView">
+
+        <attr name="edgeNum" format="integer" />
+        <attr name="level" format="integer" />
+        <attr name="levelColor" format="color" />
+        <attr name="radiusLineColor" format="color" />
+        <attr name="angelNameTextSize" format="dimension" />
+        <attr name="horizontalTextSpace" format="dimension" />
+        <attr name="vertex" format="boolean" />
+        <attr name="chartFillColor" format="color" />
+        <attr name="debug" format="boolean" />
+        <attr name="maxProgress" format="integer" />
+        <attr name="pointColor" format="color" />
+        <attr name="pointRadius" format="dimension" />
+        <attr name="chartStrokeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseShadowView">
+        <attr name="shadowDx" format="dimension" />
+        <attr name="shadowDy" format="dimension" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="dimension" />
+        <attr name="openShadow" format="boolean" />
+    </declare-styleable>
+
+</resources>
