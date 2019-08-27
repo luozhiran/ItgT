@@ -111,7 +111,8 @@ FileProvider 是ContentProvider的子类，它的功能是通过为某个文件�
   
  ### 为URI申请一个临时权限
  为getUriForFile()返回的Uri申请permission,用下面方法中的一个就可以
-    1.调用Context.grantUriPermission(package,Uri,mode_flags)为Uri申请权限，使用你自己期望的mode_flags为Uri申请权限，package参数会将uri的临时访问权限授予指定的包名。根据mode_flags参数给定的值，你可以设置FLAG_GRANT_READ_URI_PERMISSION,                       FLAG_GRANT_WRITE_URI_PERMISSION或者同时指定。申请的权限会一直保留，除非调用revokeUriPermission()撤销权限或者重启收起
+ 
+   1.调用Context.grantUriPermission(package,Uri,mode_flags)为Uri申请权限，使用你自己期望的mode_flags为Uri申请权限，package参数会将uri的临时访问权限授予指定的包名。根据mode_flags参数给定的值，你可以设置FLAG_GRANT_READ_URI_PERMISSION,                       FLAG_GRANT_WRITE_URI_PERMISSION或者同时指定。申请的权限会一直保留，除非调用revokeUriPermission()撤销权限或者重启收起
    
    2. 用Intent的setData()函数，把Uri设置到Intent中，然后调用Intent.setFlags()指定FLAG_GRANT_READ_URI_PERMISSION or                            FLAG_GRANT_WRITE_URI_PERMISSION or both..最后发送Intent给另一个app。一般通过setResul()发送Intent。                                       
 
