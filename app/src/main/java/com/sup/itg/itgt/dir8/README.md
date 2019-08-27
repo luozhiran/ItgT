@@ -10,6 +10,7 @@ FileProvider 是ContentProvider的子类，它的功能是通过为某个文件�
   FileProvider可以自动为文件生成content URI ，所以你不需要在代码中定义子类。相反，你可以通过xml的方式，让app包含一个FileProvider,。如何指      定FileProvider？
   
   在app的Manifest文件中添加<provider>元素。设置元素属性:
+        
      1.android:name=android.support.v4.content.FileProvider(默认值，不能改)
         
      2.android:authorities=com.mydomain.fileprovider(设置URI,要唯一，通常用app包名，例如 pakgename+fileprovider)
