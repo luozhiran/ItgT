@@ -1,8 +1,8 @@
 
 ### FileProvider
 
-   FileProvider 是ContentProvider的子类，它的功能是通过为某个文件创建content://Uri(代替以前使用的file:///Uri)，让app之间安全的共享该文件。想要读写content URI共享的文件，要申请一个临时读写权限（也就是说可以用临时读写权限，去访问content URI指定的文件），例如，你创建了Intent并且为该Intent设置了content URI，然后启动其他app，这时，你可以通过Intent.setFlag()方法添加权限，只要activity栈中的activity生命周期存活，这个权限会一直存在。  
-   用Intent启动service，只要service在运行，申请 的权限一直存在。与file:///Uri相比，file:///Uri访问文件必须改变文件系统底层文件的权限，并且你提供的权限可供任何app使用，在改变权限之前它会一直有效，这种访问机制在本质上不安全通过content URI提供的文件访问安全级别构成了Android基础安全的一部分
+>      FileProvider 是ContentProvider的子类，它的功能是通过为某个文件创建content://Uri(代替以前使用的file:///Uri)，让app之间安全的共享该文件。想要读写content URI共享的文件，要申请一个临时读写权限（也就是说可以用临时读写权限，去访问content URI指定的文件），例如，你创建了Intent并且为该Intent设置了content URI，然后启动其他app，这时，你可以通过Intent.setFlag()方法添加权限，只要activity栈中的activity生命周期存活，这个权限会一直存在。  
+>      用Intent启动service，只要service在运行，申请 的权限一直存在。与file:///Uri相比，file:///Uri访问文件必须改变文件系统底层文件的权限，并且你提供的权限可供任何app使用，在改变权限之前它会一直有效，这种访问机制在本质上不安全通过content URI提供的文件访问安全级别构成了Android基础安全的一部分
         
 
 ### 构建FileProvider
