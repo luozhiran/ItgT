@@ -22,7 +22,7 @@ FileProvider 是ContentProvider的子类，它的功能是通过为某个文件�
          3.android:exprot = false(设置外部访问权限，官方文档上说，the FileProvider does not need to be public)
          4.android:grantUriPermissions=true(设置true，允许你申请一个临时访问文件权限)
          
-         ```markdown
+ ```markdown
          <manifest>
              ...
              <application>
@@ -38,7 +38,7 @@ FileProvider 是ContentProvider的子类，它的功能是通过为某个文件�
              </application>
          </manifest>
       
-         ```
+  ```
          
         如果你想复写FileProvider函数的默认行为（复写函数），则要继承（expend FileProvider）并且使用xml文件中android:name指定的名称
         
