@@ -11,8 +11,11 @@ FileProvider 是ContentProvider的子类，它的功能是通过为某个文件�
   
   在app的Manifest文件中添加<provider>元素。设置元素属性:
      1.android:name=android.support.v4.content.FileProvider(默认值，不能改)
+        
      2.android:authorities=com.mydomain.fileprovider(设置URI,要唯一，通常用app包名，例如 pakgename+fileprovider)
+     
      3.android:exprot = false(设置外部访问权限，官方文档上说，the FileProvider does not need to be public)
+     
      4.android:grantUriPermissions=true(设置true，允许你申请一个临时访问文件权限)
  ```
          <manifest>
