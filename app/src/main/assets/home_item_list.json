@@ -30,5 +30,9 @@
   {
     "name": "fileProvider",
     "pic": ""
-  }
+  },
+  {
+  "name": "textview",
+  "pic": ""
+}
 ]

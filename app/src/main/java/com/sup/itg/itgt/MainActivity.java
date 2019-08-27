@@ -108,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
                     case "fileProvider":
                         gotoActivity(FileProvideActivity.class);
                         break;
+                    case "textview":
+                        gotoActivity(FileProvideActivity.class);
+
+                        break;
                 }
             }
         });
