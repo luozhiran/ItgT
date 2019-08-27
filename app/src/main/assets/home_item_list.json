@@ -18,5 +18,17 @@
   {
     "name": "radar",
     "pic": ""
+  },
+  {
+    "name": "shadow",
+    "pic": ""
+  },
+  {
+    "name": "coordinator",
+    "pic": ""
+  },
+  {
+    "name": "fileProvider",
+    "pic": ""
   }
 ]

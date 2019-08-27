@@ -18,11 +18,39 @@
     </declare-styleable>
 
     <declare-styleable name="BaseShadowView">
+        <attr name="tshadowDx" format="dimension" />
+        <attr name="tshadowDy" format="dimension" />
+        <attr name="tshadowColor" format="color" />
+        <attr name="tshadowRadius" format="dimension" />
+        <attr name="topenShadow" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="BaseMaskFilterView">
+
+        <attr name="openMaskFilter" format="boolean" />
+        <attr name="maskRadius" format="dimension" />
+        <attr name="maskColor" format="color" />
+        <attr name="maskFilterBlurType">
+            <enum name="INNER" value="1" />
+            <enum name="SOLID" value="2" />
+            <enum name="NORMAL" value="3" />
+            <enum name="OUTER" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowLayout">
         <attr name="shadowDx" format="dimension" />
         <attr name="shadowDy" format="dimension" />
         <attr name="shadowColor" format="color" />
         <attr name="shadowRadius" format="dimension" />
-        <attr name="openShadow" format="boolean" />
+        <attr name="shadowPosition">
+            <enum name="all" value="1" />
+            <enum name="left" value="2" />
+            <enum name="top" value="3" />
+            <enum name="right" value="4" />
+            <enum name="bottom" value="5" />
+        </attr>
     </declare-styleable>
 
 </resources>
