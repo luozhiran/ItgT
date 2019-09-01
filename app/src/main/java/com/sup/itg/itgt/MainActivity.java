@@ -13,6 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sup.itg.itgt.dir1.MatrixActivity;
+import com.sup.itg.itgt.dir10.ProgressBarActivity;
+import com.sup.itg.itgt.dir10.RingProgressBar;
+import com.sup.itg.itgt.dir11.HorProgressActivity;
+import com.sup.itg.itgt.dir11.HorProgressView;
+import com.sup.itg.itgt.dir12.Wu58Activity;
 import com.sup.itg.itgt.dir2.GestureActivity;
 import com.sup.itg.itgt.dir3.SortActivity;
 import com.sup.itg.itgt.dir4.InjectActivity;
@@ -20,6 +25,7 @@ import com.sup.itg.itgt.dir5.RadarActivity;
 import com.sup.itg.itgt.dir6.ShadowActivity;
 import com.sup.itg.itgt.dir7.CoordinatorLayoutActivity;
 import com.sup.itg.itgt.dir8.FileProvideActivity;
+import com.sup.itg.itgt.dir9.ViewActivity;
 import com.sup.itg.viewinject.ContentView;
 import com.sup.itg.viewinject.ViewInject;
 import com.sup.itg.viewinject.ViewInjectUtils;
@@ -109,8 +115,16 @@ public class MainActivity extends AppCompatActivity {
                         gotoActivity(FileProvideActivity.class);
                         break;
                     case "textview":
-                        gotoActivity(FileProvideActivity.class);
-
+                        gotoActivity(ViewActivity.class);
+                        break;
+                    case "Ring":
+                        gotoActivity(ProgressBarActivity.class);
+                        break;
+                    case "hprogress":
+                        gotoActivity(HorProgressActivity.class);
+                        break;
+                    case "58同城":
+                        gotoActivity(Wu58Activity.class);
                         break;
                 }
             }

@@ -53,4 +53,32 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="TextView">
+        <attr name="iTextSize" format="dimension"/>
+        <attr name="iTextColor" format="color"/>
+        <attr name="iText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RingProgressBar">
+
+        <attr name="irBorderWidth" format="dimension"/>
+        <attr name="irOutColor" format="color"/>
+        <attr name="irInColor" format="color"/>
+        <attr name="irTextSize" format="dimension"/>
+        <attr name="irMaxProgressValue" format="integer"/>
+        <attr name="irProgress" format="integer"/>
+        <attr name="irTextColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="HorProgressView">
+        <attr name="hpBackground" format="color"/>
+        <attr name="hpColor" format="color"/>
+        <attr name="hpTextColor" format="color"/>
+        <attr name="hpTextSize" format="dimension"/>
+        <attr name="hpCap" format="boolean"/>
+        <attr name="hpProgress" format="integer"/>
+        <attr name="hpMaxProgress" format="integer"/>
+    </declare-styleable>
+
 </resources>

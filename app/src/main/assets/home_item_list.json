@@ -32,7 +32,19 @@
     "pic": ""
   },
   {
-  "name": "textview",
-  "pic": ""
-}
+    "name": "textview",
+    "pic": ""
+  },
+  {
+    "name": "Ring",
+    "pic": ""
+  },
+  {
+    "name":"hprogress",
+    "pic": ""
+  },
+  {
+    "name":"58同城",
+    "pic": ""
+  }
 ]

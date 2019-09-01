@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dir9.ViewActivity"></activity>
+        <activity android:name=".dir12.Wu58Activity"></activity>
+        <activity android:name=".dir11.HorProgressActivity" />
+        <activity android:name=".dir10.ProgressBarActivity" />
+        <activity android:name=".dir9.ViewActivity" />
         <activity android:name=".dir8.FileProvideActivity" />
         <activity android:name=".dir7.CoordinatorLayoutActivity" />
         <activity android:name=".dir6.ShadowActivity" />
