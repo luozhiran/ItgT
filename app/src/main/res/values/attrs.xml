@@ -81,4 +81,19 @@
         <attr name="hpMaxProgress" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="RatingBarView">
+
+        <attr name="rbRatingNum" format="integer"/>
+        <attr name="rbGrade" format="integer"/>
+        <attr name="rbZeroGradeIcon" format="reference"/>
+        <attr name="rbGradeIcon" format="reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="LetterSideView">
+
+        <attr name="lsTextSize" format="dimension"/>
+        <attr name="lsTextColor" format="color"/>
+        <attr name="lsLightTextColor" format="color"/>
+    </declare-styleable>
 </resources>

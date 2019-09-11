@@ -46,5 +46,13 @@
   {
     "name":"58同城",
     "pic": ""
+  },
+  {
+    "name":"rating",
+    "pic": ""
+  },
+  {
+    "name":"letter",
+    "pic": ""
   }
 ]
