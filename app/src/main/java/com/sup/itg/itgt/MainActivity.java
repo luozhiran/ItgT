@@ -15,6 +15,11 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sup.itg.itgt.dir1.MatrixActivity;
 import com.sup.itg.itgt.dir13.ProgressActivity;
 import com.sup.itg.itgt.dir14.ScrollviewActivity;
+import com.sup.itg.itgt.dir10.ProgressBarActivity;
+import com.sup.itg.itgt.dir10.RingProgressBar;
+import com.sup.itg.itgt.dir11.HorProgressActivity;
+import com.sup.itg.itgt.dir11.HorProgressView;
+import com.sup.itg.itgt.dir12.Wu58Activity;
 import com.sup.itg.itgt.dir2.GestureActivity;
 import com.sup.itg.itgt.dir3.SortActivity;
 import com.sup.itg.itgt.dir4.InjectActivity;
@@ -92,6 +97,16 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "slideMenu":
                         gotoActivity(ScrollviewActivity.class);
+                        gotoActivity(ViewActivity.class);
+                        break;
+                    case "Ring":
+                        gotoActivity(ProgressBarActivity.class);
+                        break;
+                    case "hprogress":
+                        gotoActivity(HorProgressActivity.class);
+                        break;
+                    case "58同城":
+                        gotoActivity(Wu58Activity.class);
                         break;
 
 

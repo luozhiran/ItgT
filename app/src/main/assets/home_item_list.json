@@ -43,4 +43,19 @@
     "name": "slideMenu",
     "pic": "ic_launcher"
   }
+    "name": "textview",
+    "pic": ""
+  },
+  {
+    "name": "Ring",
+    "pic": ""
+  },
+  {
+    "name":"hprogress",
+    "pic": ""
+  },
+  {
+    "name":"58同城",
+    "pic": ""
+  }
 ]
