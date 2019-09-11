@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sup.itg.itgt.dir1.MatrixActivity;
+import com.sup.itg.itgt.dir13.ProgressActivity;
+import com.sup.itg.itgt.dir14.ScrollviewActivity;
 import com.sup.itg.itgt.dir2.GestureActivity;
 import com.sup.itg.itgt.dir3.SortActivity;
 import com.sup.itg.itgt.dir4.InjectActivity;
@@ -20,6 +22,7 @@ import com.sup.itg.itgt.dir5.RadarActivity;
 import com.sup.itg.itgt.dir6.ShadowActivity;
 import com.sup.itg.itgt.dir7.CoordinatorLayoutActivity;
 import com.sup.itg.itgt.dir8.FileProvideActivity;
+import com.sup.itg.itgt.dir9.ViewActivity;
 import com.sup.itg.viewinject.ContentView;
 import com.sup.itg.viewinject.ViewInject;
 import com.sup.itg.viewinject.ViewInjectUtils;
@@ -45,37 +48,10 @@ public class MainActivity extends AppCompatActivity {
         mMainAdapter = new MainAdapter();
         mRecyclerview.setLayoutManager(new GridLayoutManager(this, 4));
         mRecyclerview.setAdapter(mMainAdapter);
-
         String str = Utils.readAssertDir(this);
-
         List<HomeData> homeDataList = JSON.parseArray(str, HomeData.class);
         for (HomeData data : homeDataList) {
-            switch (data.name) {
-                case "Matrix":
-                    data.resId = R.mipmap.matrix;
-                    break;
-                case "Gesture":
-                    data.resId = R.mipmap.guest;
-                    break;
-                case "leetCode":
-                    data.resId = R.mipmap.ic_launcher;
-                    break;
-                case "inject":
-                    data.resId = R.mipmap.ic_launcher;
-                    break;
-                case "radar":
-                    data.resId = R.mipmap.ic_launcher;
-                    break;
-                case "shadow":
-                    data.resId = R.mipmap.ic_launcher;
-                    break;
-                case "coordinator":
-                    data.resId = R.mipmap.ic_launcher;
-                    break;
-                default:
-                    data.resId = R.mipmap.ic_launcher;
-                    break;
-            }
+            data.resId = getResources().getIdentifier(data.pic, "mipmap", getPackageName());
         }
         mMainAdapter.addData(homeDataList);
         mMainAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
@@ -109,9 +85,16 @@ public class MainActivity extends AppCompatActivity {
                         gotoActivity(FileProvideActivity.class);
                         break;
                     case "textview":
-                        gotoActivity(FileProvideActivity.class);
-
+                        gotoActivity(ViewActivity.class);
                         break;
+                    case "progressbar":
+                        gotoActivity(ProgressActivity.class);
+                        break;
+                    case "slideMenu":
+                        gotoActivity(ScrollviewActivity.class);
+                        break;
+
+
                 }
             }
         });
