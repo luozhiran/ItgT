@@ -53,6 +53,21 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="ItgHorizontalProgressBar">
+        <attr name="iBarBackgroundColor" format="color" />
+        <attr name="iBarColor" format="color" />
+        <attr name="iMax" format="integer" />
+        <attr name="iProgress" />
+        <attr name="iCap" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlideMenu">
+        <attr name="iMenuMarginRight" format="dimension" />
+    </declare-styleable>
+
     <declare-styleable name="TextView">
         <attr name="iTextSize" format="dimension"/>
         <attr name="iTextColor" format="color"/>

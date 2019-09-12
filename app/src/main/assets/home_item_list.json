@@ -1,58 +1,66 @@
 [
   {
     "name": "Matrix",
-    "pic": ""
+    "pic": "matrix"
   },
   {
     "name": "Gesture",
-    "pic": ""
+    "pic": "guest"
   },
   {
     "name": "leetCode",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
     "name": "inject",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
     "name": "radar",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
     "name": "shadow",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
     "name": "coordinator",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
     "name": "fileProvider",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
     "name": "textview",
-    "pic": ""
+    "pic": "ic_launcher"
+  },
+  {
+    "name": "progressbar",
+    "pic": "ic_launcher"
+  },
+  {
+    "name": "slideMenu",
+    "pic": "ic_launcher"
   },
   {
     "name": "Ring",
-    "pic": ""
+    "pic": "ic_launcher"
   },
   {
-    "name":"hprogress",
-    "pic": ""
+    "name": "hprogress",
+    "pic": "ic_launcher"
   },
   {
-    "name":"58同城",
-    "pic": ""
+    "name": "58同城",
+    "pic": "ic_launcher"
   },
   {
-    "name":"rating",
-    "pic": ""
+    "name": "rating",
+    "pic": "ic_launcher"
   },
   {
-    "name":"letter",
-    "pic": ""
+    "name": "letter",
+    "pic": "ic_launcher"
   }
 ]

@@ -15,6 +15,9 @@
         <activity android:name=".dir11.HorProgressActivity" />
         <activity android:name=".dir10.ProgressBarActivity" />
         <activity android:name=".dir9.ViewActivity" />
+        <activity android:name=".dir14.ScrollviewActivity"></activity>
+        <activity android:name=".dir13.ProgressActivity" />
+        <activity android:name=".dir9.ViewActivity" />
         <activity android:name=".dir8.FileProvideActivity" />
         <activity android:name=".dir7.CoordinatorLayoutActivity" />
         <activity android:name=".dir6.ShadowActivity" />
