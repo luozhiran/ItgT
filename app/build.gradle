@@ -23,6 +23,9 @@ android {
         main.res.srcDirs += 'src/main/res-view'
         main.res.srcDirs += 'src/main/res-item'
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 

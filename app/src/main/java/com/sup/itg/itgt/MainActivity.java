@@ -20,6 +20,7 @@ import com.sup.itg.itgt.dir11.HorProgressActivity;
 import com.sup.itg.itgt.dir12.Wu58Activity;
 import com.sup.itg.itgt.dir13.RatingActivity;
 import com.sup.itg.itgt.dir15.LetterSideActivity;
+import com.sup.itg.itgt.dir16.ViewDrawViewActivity;
 import com.sup.itg.itgt.dir2.GestureActivity;
 import com.sup.itg.itgt.dir3.SortActivity;
 import com.sup.itg.itgt.dir4.InjectActivity;
@@ -28,6 +29,7 @@ import com.sup.itg.itgt.dir6.ShadowActivity;
 import com.sup.itg.itgt.dir7.CoordinatorLayoutActivity;
 import com.sup.itg.itgt.dir8.FileProvideActivity;
 import com.sup.itg.itgt.dir9.ViewActivity;
+import com.sup.itg.itgt.mvvm.MvvmActivity;
 import com.sup.itg.viewinject.ContentView;
 import com.sup.itg.viewinject.ViewInject;
 import com.sup.itg.viewinject.ViewInjectUtils;
@@ -112,6 +114,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "letter":
                         gotoActivity(LetterSideActivity.class);
+                        break;
+                    case "viewDragView":
+                        gotoActivity(ViewDrawViewActivity.class);
+                        break;
+                    case "mvvm":
+                        gotoActivity(MvvmActivity.class);
                         break;
 
 

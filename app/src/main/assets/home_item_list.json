@@ -62,5 +62,15 @@
   {
     "name": "letter",
     "pic": "ic_launcher"
+  },
+  {
+    "name": "viewDragView",
+    "pic": "ic_launcher"
+  },
+  {
+    "name": "mvvm",
+    "pic": "ic_launcher"
   }
+
+
 ]
