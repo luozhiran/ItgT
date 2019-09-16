@@ -8,7 +8,8 @@ import android.os.Bundle;
 import com.sup.itg.itgt.R;
 import com.sup.itg.itgt.databinding.ActivityMvvmBinding;
 import com.sup.itg.itgt.dir9.TextView;
-
+//https://blog.csdn.net/u011897062/article/details/82185027
+// https://developer.android.google.cn/topic/libraries/data-binding#java
 public class MvvmActivity extends AppCompatActivity {
 
     @Override
