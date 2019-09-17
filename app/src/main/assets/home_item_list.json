@@ -70,6 +70,14 @@
   {
     "name": "mvvm",
     "pic": "ic_launcher"
+  },
+  {
+    "name": "kotmvvm",
+    "pic": "ic_launcher"
+  },
+  {
+    "name": "touchTest",
+    "pic": "ic_launcher"
   }
 
 
