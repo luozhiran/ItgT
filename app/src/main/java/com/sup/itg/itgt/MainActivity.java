@@ -21,6 +21,7 @@ import com.sup.itg.itgt.dir12.Wu58Activity;
 import com.sup.itg.itgt.dir13.RatingActivity;
 import com.sup.itg.itgt.dir15.LetterSideActivity;
 import com.sup.itg.itgt.dir16.ViewDrawViewActivity;
+import com.sup.itg.itgt.dir17.TestItgrActivity;
 import com.sup.itg.itgt.dir19.TouchTestActivity;
 import com.sup.itg.itgt.dir2.GestureActivity;
 import com.sup.itg.itgt.dir3.SortActivity;
@@ -129,7 +130,9 @@ public class MainActivity extends AppCompatActivity {
                     case "touchTest":
                         gotoActivity(TouchTestActivity.class);
                         break;
-
+                    case "itgr":
+                        gotoActivity(TestItgrActivity.class);
+                        break;
 
                 }
             }

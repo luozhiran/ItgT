@@ -68,7 +68,7 @@
         <attr name="iMenuMarginRight" format="dimension" />
     </declare-styleable>
 
-    <declare-styleable name="TextView">
+    <declare-styleable name="MyTextView">
         <attr name="iTextSize" format="dimension"/>
         <attr name="iTextColor" format="color"/>
         <attr name="iText" format="string"/>

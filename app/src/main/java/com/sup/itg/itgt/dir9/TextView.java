@@ -60,10 +60,10 @@ public class TextView extends View {
 
 
     private void init(Context context, AttributeSet attrs) {
-        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.TextView);
-        int color = array.getColor(R.styleable.TextView_iTextColor, Color.parseColor("#000000"));
-        float textSize = array.getDimension(R.styleable.TextView_iTextSize, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 18, getResources().getDisplayMetrics()));
-        mContent = array.getString(R.styleable.TextView_iText);
+        TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.MyTextView);
+        int color = array.getColor(R.styleable.MyTextView_iTextColor, Color.parseColor("#000000"));
+        float textSize = array.getDimension(R.styleable.MyTextView_iTextSize, TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 18, getResources().getDisplayMetrics()));
+        mContent = array.getString(R.styleable.MyTextView_iText);
         array.recycle();
         mContentPaint = new Paint();
         mContentPaint.setAntiAlias(true);

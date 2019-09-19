@@ -1,54 +1,60 @@
 package com.sup.itg.itgr;
 
 import android.util.SparseArray;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HeaderViewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+import com.sup.itg.itgr.help.ViewHelp;
+import com.sup.itg.itgr.holder.ItgHolder;
 
-    private static int BASE_ITEM_TYPE_HEADER = 10000000;
-    private static int BASE_ITEM_TYPE_FOOTER = 20000000;
+import java.util.ArrayList;
+import java.util.List;
 
-    private SparseArray<View> mHeaderView;
-    private SparseArray<View> mFootView;
-    private RecyclerView.Adapter<RecyclerView.ViewHolder> mAdapter;
+public abstract class ItgRecyclerAdapter<D> extends ItgBaseAdapter<D,ItgHolder> {
 
-    public HeaderViewRecyclerAdapter(RecyclerView.Adapter<RecyclerView.ViewHolder> adapter, SparseArray<View> head, SparseArray<View> foot) {
-        if (head == null) {
-            head = new SparseArray<>();
-        }
-        if (foot == null) {
-            foot = new SparseArray<>();
-        }
-        mHeaderView = head;
-        mFootView = foot;
-        mAdapter = adapter;
+
+
+    public ItgRecyclerAdapter(int resId) {
+        mHeaderView = new SparseArray<>();
+        mFootView = new SparseArray<>();
+        mList = new ArrayList<>();
+        mResId = resId;
+        mViewHelp = new ViewHelp();
     }
 
+    @SuppressWarnings("unchecked")
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ItgHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if (isHeaderViewType(viewType)) {
             return createViewHolder(mHeaderView.get(viewType));
         } else if (isFooterViewType(viewType)) {
             return createViewHolder(mFootView.get(viewType));
         }
-        return mAdapter.onCreateViewHolder(parent, viewType);
+        mViewHelp.context = parent.getContext();
+        ItgHolder itgHolder = new ItgHolder(LayoutInflater.from(mViewHelp.context).inflate(mResId, parent, false));
+        mViewHelp.setHolder(itgHolder);
+        return itgHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull ItgHolder holder, int position) {
+        if (!isHeader(position) && !isFooter(position)) {
+            bind(mList.get(position - getHeadersCount()), mViewHelp);
+        }
     }
+
+    public abstract void bind(D data, ViewHelp help);
+
 
     @Override
     public int getItemCount() {
         return mAdapter.getItemCount() + mFootView.size() + mHeaderView.size();
     }
-
 
     public int getHeadersCount() {
         return mHeaderView.size();
@@ -111,8 +117,7 @@ public class HeaderViewRecyclerAdapter extends RecyclerView.Adapter<RecyclerView
         return super.getItemViewType(position);
     }
 
-    private RecyclerView.ViewHolder createViewHolder(View view) {
-        return new RecyclerView.ViewHolder(view) {
-        };
+    private ItgHolder createViewHolder(View view) {
+        return new ItgHolder(view);
     }
 }

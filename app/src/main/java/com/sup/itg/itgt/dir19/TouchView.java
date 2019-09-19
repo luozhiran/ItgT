@@ -78,17 +78,35 @@ public class TouchView extends ViewGroup {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()){
             case MotionEvent.ACTION_DOWN:
-                ItgL.e("ACTION_DOWN");
+                ItgL.e("dispatchTouchEvent ACTION_DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                ItgL.e("ACTION_MOVE");
+                ItgL.e("dispatchTouchEvent ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
-                ItgL.e("ACTION_UP");
+                ItgL.e("dispatchTouchEvent ACTION_UP");
                 break;
         }
         boolean handle = super.dispatchTouchEvent(ev);
 
         return handle;
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        switch (ev.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                ItgL.e("onInterceptTouchEvent ACTION_DOWN");
+                break;
+            case MotionEvent.ACTION_MOVE:
+                ItgL.e("onInterceptTouchEvent ACTION_MOVE");
+                break;
+            case MotionEvent.ACTION_UP:
+                ItgL.e("onInterceptTouchEvent ACTION_UP");
+                break;
+        }
+        boolean h = super.onInterceptTouchEvent(ev);
+        ItgL.e(h+" ");
+        return h;
     }
 }

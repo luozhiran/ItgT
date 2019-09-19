@@ -8,16 +8,16 @@ import androidx.annotation.Nullable;
 
 import com.sup.itg.base.ItgL;
 
-public class TextView extends android.widget.TextView {
-    public TextView(Context context) {
+public class MyTextView extends android.widget.TextView {
+    public MyTextView(Context context) {
         super(context);
     }
 
-    public TextView(Context context, @Nullable AttributeSet attrs) {
+    public MyTextView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public TextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public MyTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

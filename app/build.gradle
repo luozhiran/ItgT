@@ -46,5 +46,6 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.14'
     implementation 'com.github.luozhiran:Itgbase:0.0.5'
     implementation project(':viewinject')
+    implementation project(':itgr')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

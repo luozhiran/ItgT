@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dir19.TouchTestActivity"></activity>
+        <activity android:name=".dir17.TestItgrActivity"></activity>
+        <activity android:name=".dir19.TouchTestActivity" />
         <activity android:name=".mvvm.KMvvmActivity" />
         <activity android:name=".mvvm.MvvmActivity" />
         <activity android:name=".dir16.ViewDrawViewActivity" />
