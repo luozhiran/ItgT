@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dir19.TouchTestActivity">
+    tools:context=".touch.dir19.TouchTestActivity">
 
-    <com.sup.itg.itgt.dir19.TouchView
+    <com.sup.itg.itgt.touch.dir19.TouchView
         android:layout_width="match_parent"
         android:background="@color/blue"
         android:layout_height="match_parent">
 
 
-        <com.sup.itg.itgt.dir19.MyTextView
+        <com.sup.itg.itgt.touch.dir19.MyTextView
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:background="@color/black" />
 
-    </com.sup.itg.itgt.dir19.TouchView>
+    </com.sup.itg.itgt.touch.dir19.TouchView>
 
 
 </RelativeLayout>

@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/deep_gray"
-    tools:context=".dir5.RadarActivity">
+    tools:context=".customView.dir5.RadarActivity">
 
-    <com.sup.itg.itgt.dir5.RadarView
+    <com.sup.itg.itgt.customView.dir5.RadarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

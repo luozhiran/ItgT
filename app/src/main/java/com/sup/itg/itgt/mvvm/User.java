@@ -1,8 +1,13 @@
 package com.sup.itg.itgt.mvvm;
 
-public class User {
-    private final String firstName;
-    private final String lastName;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+
+import com.sup.itg.itgt.BR;
+
+public class User extends BaseObservable {
+    private String firstName;
+    private String lastName;
     private String displayName;
     private int age;
 
@@ -16,15 +21,45 @@ public class User {
         this.age = age;
     }
 
+    @Bindable
     public int getAge() {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+        notifyPropertyChanged(BR.age);
+    }
+
+    @Bindable
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+        notifyPropertyChanged(BR.displayName);
+    }
+
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+        notifyPropertyChanged(BR.firstName);
+    }
+
+    @Bindable
     public String getFirstName() {
         return firstName;
     }
 
+    @Bindable
     public String getLastName() {
         return lastName;
     }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+        notifyPropertyChanged(BR.lastName);
+    }
+
 }

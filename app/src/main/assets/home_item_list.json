@@ -82,6 +82,10 @@
   {
     "name": "itgr",
     "pic": "ic_launcher"
+  },
+  {
+    "name": "manifest",
+    "pic": "ic_launcher"
   }
 
 

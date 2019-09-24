@@ -13,24 +13,25 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sup.itg.itgt.dir1.MatrixActivity;
-import com.sup.itg.itgt.dir13.ProgressActivity;
-import com.sup.itg.itgt.dir14.ScrollviewActivity;
-import com.sup.itg.itgt.dir10.ProgressBarActivity;
-import com.sup.itg.itgt.dir11.HorProgressActivity;
-import com.sup.itg.itgt.dir12.Wu58Activity;
-import com.sup.itg.itgt.dir13.RatingActivity;
-import com.sup.itg.itgt.dir15.LetterSideActivity;
-import com.sup.itg.itgt.dir16.ViewDrawViewActivity;
+import com.sup.itg.itgt.customView.dir13.ProgressActivity;
+import com.sup.itg.itgt.customView.dir14.ScrollviewActivity;
+import com.sup.itg.itgt.customView.dir10.ProgressBarActivity;
+import com.sup.itg.itgt.customView.dir11.HorProgressActivity;
+import com.sup.itg.itgt.customView.dir12.Wu58Activity;
+import com.sup.itg.itgt.customView.dir13.RatingActivity;
+import com.sup.itg.itgt.customView.dir15.LetterSideActivity;
+import com.sup.itg.itgt.customView.dir16.ViewDrawViewActivity;
 import com.sup.itg.itgt.dir17.TestItgrActivity;
-import com.sup.itg.itgt.dir19.TouchTestActivity;
-import com.sup.itg.itgt.dir2.GestureActivity;
-import com.sup.itg.itgt.dir3.SortActivity;
-import com.sup.itg.itgt.dir4.InjectActivity;
-import com.sup.itg.itgt.dir5.RadarActivity;
-import com.sup.itg.itgt.dir6.ShadowActivity;
-import com.sup.itg.itgt.dir7.CoordinatorLayoutActivity;
+import com.sup.itg.itgt.dir18.ManifestActivity;
+import com.sup.itg.itgt.touch.dir19.TouchTestActivity;
+import com.sup.itg.itgt.touch.dir2.GestureActivity;
+import com.sup.itg.itgt.struct.dir3.SortActivity;
+import com.sup.itg.itgt.inject.dir4.InjectActivity;
+import com.sup.itg.itgt.customView.dir5.RadarActivity;
+import com.sup.itg.itgt.customView.dir6.ShadowActivity;
+import com.sup.itg.itgt.animation.dir7.CoordinatorLayoutActivity;
 import com.sup.itg.itgt.dir8.FileProvideActivity;
-import com.sup.itg.itgt.dir9.ViewActivity;
+import com.sup.itg.itgt.customView.dir9.ViewActivity;
 import com.sup.itg.itgt.mvvm.KMvvmActivity;
 import com.sup.itg.itgt.mvvm.MvvmActivity;
 import com.sup.itg.viewinject.ContentView;
@@ -132,6 +133,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "itgr":
                         gotoActivity(TestItgrActivity.class);
+                        break;
+                    case "manifest":
+                        gotoActivity(ManifestActivity.class);
                         break;
 
                 }
