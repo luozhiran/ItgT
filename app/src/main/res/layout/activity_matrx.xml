@@ -5,16 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    tools:context=".java.animation.dir1.MatrixActivity">
+    tools:context=".java.animation.matrix.MatrixActivity">
 
 
-    <ImageView
+    <com.sup.itg.itgt.java.animation.matrix.MatrixSetPolyToPolyView
         android:id="@+id/ivImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@mipmap/matrix_icon" />
+        android:layout_gravity="center" />
 
 
     <ImageView

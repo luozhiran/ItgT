@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.sup.itg.itgt.java.animation.dir1.MatrixActivity;
+import com.sup.itg.itgt.java.animation.matrix.MatrixActivity;
 import com.sup.itg.itgt.java.customView.dir13.ProgressActivity;
 import com.sup.itg.itgt.java.customView.dir14.ScrollviewActivity;
 import com.sup.itg.itgt.java.customView.dir10.ProgressBarActivity;

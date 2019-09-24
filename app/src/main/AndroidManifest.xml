@@ -30,7 +30,7 @@
         <activity android:name=".java.inject.dir4.InjectActivity" />
         <activity android:name=".java.struct.dir3.SortActivity" />
         <activity android:name=".java.touch.dir2.GestureActivity" />
-        <activity android:name=".java.animation.dir1.MatrixActivity" />
+        <activity android:name=".java.animation.matrix.MatrixActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
