@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customView.dir13.ProgressActivity">
+    tools:context=".java.customView.dir13.ProgressActivity">
 
-    <com.sup.itg.itgt.customView.dir13.ItgHorizontalProgressBar
+    <com.sup.itg.itgt.java.customView.dir13.ItgHorizontalProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"

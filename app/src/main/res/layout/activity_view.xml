@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
 
-    <com.sup.itg.itgt.customView.dir9.TextView
+    <com.sup.itg.itgt.java.customView.dir9.TextView
         android:id="@+id/recyclerview"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"

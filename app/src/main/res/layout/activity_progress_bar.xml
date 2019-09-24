@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".customView.dir10.ProgressBarActivity">
+    tools:context=".java.customView.dir10.ProgressBarActivity">
 
-    <com.sup.itg.itgt.customView.dir10.RingProgressBar
+    <com.sup.itg.itgt.java.customView.dir10.RingProgressBar
         android:id="@+id/ringProgress"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"

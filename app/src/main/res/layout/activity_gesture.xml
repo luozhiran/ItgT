@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".touch.dir2.GestureActivity">
+    tools:context=".java.touch.dir2.GestureActivity">
 
-    <com.sup.itg.itgt.touch.dir2.ScaleImageView
+    <com.sup.itg.itgt.java.touch.dir2.ScaleImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
