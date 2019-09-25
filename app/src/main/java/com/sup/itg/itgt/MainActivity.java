@@ -25,7 +25,7 @@ import com.sup.itg.itgt.java.customView.dir17.TestItgrActivity;
 import com.sup.itg.itgt.java.component.dir18.ManifestActivity;
 import com.sup.itg.itgt.java.touch.dir19.TouchTestActivity;
 import com.sup.itg.itgt.java.touch.dir2.GestureActivity;
-import com.sup.itg.itgt.java.struct.dir3.SortActivity;
+import com.sup.itg.itgt.java.struct.sort.SortActivity;
 import com.sup.itg.itgt.java.inject.dir4.InjectActivity;
 import com.sup.itg.itgt.java.customView.dir5.RadarActivity;
 import com.sup.itg.itgt.java.customView.dir6.ShadowActivity;

@@ -1,4 +1,4 @@
-package com.sup.itg.itgt.java.struct.dir3;
+package com.sup.itg.itgt.java.struct.sort;
 
 import android.os.Bundle;
 import android.util.Log;

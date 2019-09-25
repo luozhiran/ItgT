@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.sup.itg.itgt.java.component.dir18.ManifestActivity"></activity>
+        <activity android:name=".java.struct.linkStruct.BaseLinkActivity"></activity>
+        <activity android:name=".java.component.dir18.ManifestActivity" />
         <activity android:name=".java.customView.dir17.TestItgrActivity" />
         <activity android:name=".java.touch.dir19.TouchTestActivity" />
-        <activity android:name="com.sup.itg.itgt.java.mvvm.KMvvmActivity" />
-        <activity android:name="com.sup.itg.itgt.java.mvvm.MvvmActivity" />
+        <activity android:name=".java.mvvm.KMvvmActivity" />
+        <activity android:name=".java.mvvm.MvvmActivity" />
         <activity android:name=".java.customView.dir16.ViewDrawViewActivity" />
         <activity android:name=".java.customView.dir15.LetterSideActivity" />
         <activity android:name=".java.customView.dir13.RatingActivity" />
@@ -28,7 +29,7 @@
         <activity android:name=".java.customView.dir6.ShadowActivity" />
         <activity android:name=".java.customView.dir5.RadarActivity" />
         <activity android:name=".java.inject.dir4.InjectActivity" />
-        <activity android:name=".java.struct.dir3.SortActivity" />
+        <activity android:name=".java.struct.sort.SortActivity" />
         <activity android:name=".java.touch.dir2.GestureActivity" />
         <activity android:name=".java.animation.matrix.MatrixActivity" />
         <activity android:name=".MainActivity">
