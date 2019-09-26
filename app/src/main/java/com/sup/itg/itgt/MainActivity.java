@@ -23,6 +23,7 @@ import com.sup.itg.itgt.java.customView.dir15.LetterSideActivity;
 import com.sup.itg.itgt.java.customView.dir16.ViewDrawViewActivity;
 import com.sup.itg.itgt.java.customView.dir17.TestItgrActivity;
 import com.sup.itg.itgt.java.component.dir18.ManifestActivity;
+import com.sup.itg.itgt.java.struct.linkStruct.BaseLinkActivity;
 import com.sup.itg.itgt.java.touch.dir19.TouchTestActivity;
 import com.sup.itg.itgt.java.touch.dir2.GestureActivity;
 import com.sup.itg.itgt.java.struct.sort.SortActivity;
@@ -136,6 +137,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "manifest":
                         gotoActivity(ManifestActivity.class);
+                        break;
+                    case "链表":
+                        gotoActivity(BaseLinkActivity.class);
                         break;
 
                 }
