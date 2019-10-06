@@ -1,13 +1,15 @@
-package com.sup.itg.itgt.java.customView.dir16;
+package com.sup.itg.itgt.java.animation.QiCheZhiJia;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.widget.ListViewCompat;
 import androidx.customview.widget.ViewDragHelper;
 
 import com.sup.itg.base.ItgL;
@@ -18,6 +20,8 @@ public class DragView extends FrameLayout {
     private int mMenuHeight = 0;
     private View mMenuView;
     private View mContentView;
+    private boolean mOpenMenu;
+    private boolean abort;
 
     public DragView(@NonNull Context context) {
         this(context, null);
@@ -71,6 +75,7 @@ public class DragView extends FrameLayout {
                 } else if (top > mMenuHeight) {
                     top = mMenuHeight;
                 }
+
                 return top;
             }
 
@@ -88,10 +93,11 @@ public class DragView extends FrameLayout {
             @Override
             public void onViewReleased(@NonNull View releasedChild, float xvel, float yvel) {
                 super.onViewReleased(releasedChild, xvel, yvel);
-                ItgL.e("yvel =" + releasedChild.getTop());
                 if (releasedChild.getTop() > mMenuHeight / 2) {
+                    mOpenMenu = true;
                     mViewDragHelper.settleCapturedViewAt(0, mMenuHeight);
                 } else {
+                    mOpenMenu = false;
                     mViewDragHelper.settleCapturedViewAt(0, 0);
                 }
                 invalidate();
@@ -118,8 +124,8 @@ public class DragView extends FrameLayout {
 
     @Override
     public void computeScroll() {
-        super.computeScroll();
-        if (mViewDragHelper.continueSettling(true)) {
+        abort = mViewDragHelper.continueSettling(true);
+        if (abort) {
             invalidate();
         }
 
@@ -130,6 +136,9 @@ public class DragView extends FrameLayout {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         super.onInterceptTouchEvent(ev);
+        if(mOpenMenu||abort) {
+            return true;
+        }
         mViewDragHelper.shouldInterceptTouchEvent(ev);
         boolean handler = false;
         switch (ev.getAction()) {
@@ -139,13 +148,17 @@ public class DragView extends FrameLayout {
                 mViewDragHelper.processTouchEvent(ev);
                 break;
             case MotionEvent.ACTION_MOVE:
-                if (mDownY > ev.getY()) {
+                if (ev.getY() - mDownY > 0 && mMenuHeight >= ev.getY() - mDownY && !canChildScrollUp()) {
+                    ItgL.e("ACTION_MOVE  -----" + (ev.getY() - mDownY));
                     return true;
+                }else {
+                    ItgL.e("ACTION_MOVE =" + (ev.getY() - mDownY));
                 }
-                ItgL.e("ACTION_MOVE");
                 break;
             case MotionEvent.ACTION_UP:
                 ItgL.e("ACTION_UP");
+                break;
+            default:
                 break;
         }
 
@@ -158,4 +171,13 @@ public class DragView extends FrameLayout {
         mViewDragHelper.processTouchEvent(event);
         return true;
     }
+
+
+    public boolean canChildScrollUp() {
+        if (mContentView instanceof ListView) {
+            return ListViewCompat.canScrollList((ListView) mContentView, -1);
+        }
+        return mContentView.canScrollVertically(-1);
+    }
+
 }

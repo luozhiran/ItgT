@@ -1,4 +1,4 @@
-package com.sup.itg.itgt.java.customView.dir16;
+package com.sup.itg.itgt.java.animation.QiCheZhiJia;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
