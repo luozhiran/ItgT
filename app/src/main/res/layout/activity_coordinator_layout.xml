@@ -1,10 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".java.animation.material.CoordinatorLayoutActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.sup.itg.itgt.java.animation.material.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/head_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:text="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:text="text" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:text="text" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:text="text" />
+            </LinearLayout>
+
+        </com.sup.itg.itgt.java.animation.material.MyScrollView>
+
+        <!--        如果在title_bar中使用Android:alpha = 0 ，会导致头部不可见，在代码中设置-->
+        <LinearLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头部" />
+        </LinearLayout>
+    </FrameLayout>
+
+</layout>

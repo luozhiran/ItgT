@@ -49,7 +49,11 @@ public class StatusBarUtil {
         return resources.getDimensionPixelOffset(statusBarHeightId);
     }
 
-    public static void setActivityTransluction(Activity activity){
+    /**
+     * 设置全屏
+     * @param activity
+     */
+    public static void  setActivityTransluction(Activity activity){
         int currentOsVerson = Build.VERSION.SDK_INT;
         if (currentOsVerson >= Build.VERSION_CODES.LOLLIPOP) {
             View view = activity.getWindow().getDecorView();

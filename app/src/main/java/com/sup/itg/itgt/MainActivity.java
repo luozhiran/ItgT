@@ -12,27 +12,28 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.sup.itg.itgt.java.animation.behavior.BehaviorActivity;
 import com.sup.itg.itgt.java.animation.matrix.MatrixActivity;
-import com.sup.itg.itgt.java.customView.dir13.ProgressActivity;
-import com.sup.itg.itgt.java.customView.dir14.ScrollviewActivity;
-import com.sup.itg.itgt.java.customView.dir10.ProgressBarActivity;
-import com.sup.itg.itgt.java.customView.dir11.HorProgressActivity;
+import com.sup.itg.itgt.java.customView.star.ProgressActivity;
+import com.sup.itg.itgt.java.customView.qq_hua_dong_caidan.ScrollviewActivity;
+import com.sup.itg.itgt.java.customView.huan_xing_progress.ProgressBarActivity;
+import com.sup.itg.itgt.java.customView.heng_progress.HorProgressActivity;
 import com.sup.itg.itgt.java.customView.wu58Loading.Wu58Activity;
-import com.sup.itg.itgt.java.customView.dir13.RatingActivity;
-import com.sup.itg.itgt.java.customView.dir15.LetterSideActivity;
+import com.sup.itg.itgt.java.customView.star.RatingActivity;
+import com.sup.itg.itgt.java.customView.dian_hua_bu.LetterSideActivity;
 import com.sup.itg.itgt.java.animation.QiCheZhiJia.ViewDrawViewActivity;
-import com.sup.itg.itgt.java.customView.dir17.TestItgrActivity;
+import com.sup.itg.itgt.java.customView.adapter_test.TestItgrActivity;
 import com.sup.itg.itgt.java.component.dir18.ManifestActivity;
 import com.sup.itg.itgt.java.struct.linkStruct.BaseLinkActivity;
 import com.sup.itg.itgt.java.touch.dir19.TouchTestActivity;
 import com.sup.itg.itgt.java.touch.dir2.GestureActivity;
 import com.sup.itg.itgt.java.struct.sort.SortActivity;
 import com.sup.itg.itgt.java.inject.dir4.InjectActivity;
-import com.sup.itg.itgt.java.customView.dir5.RadarActivity;
-import com.sup.itg.itgt.java.customView.dir6.ShadowActivity;
-import com.sup.itg.itgt.java.animation.material.CoordinatorLayoutActivity;
-import com.sup.itg.itgt.java.customView.dir8.FileProvideActivity;
-import com.sup.itg.itgt.java.customView.dir9.ViewActivity;
+import com.sup.itg.itgt.java.customView.zhizhutu.RadarActivity;
+import com.sup.itg.itgt.java.customView.yinying.ShadowActivity;
+import com.sup.itg.itgt.java.animation.material.QQZhuangTaiLanActivity;
+import com.sup.itg.itgt.java.customView.provide_test.FileProvideActivity;
+import com.sup.itg.itgt.java.customView.huawenzi.ViewActivity;
 import com.sup.itg.itgt.java.mvvm.KMvvmActivity;
 import com.sup.itg.itgt.java.mvvm.MvvmActivity;
 import com.sup.itg.viewinject.ContentView;
@@ -40,7 +41,7 @@ import com.sup.itg.viewinject.ViewInject;
 import com.sup.itg.viewinject.ViewInjectUtils;
 
 import java.util.List;
-
+//https://blog.csdn.net/hongchi110/article/details/82890180
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
 
@@ -90,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
                     case "shadow":
                         gotoActivity(ShadowActivity.class);
                         break;
-                    case "coordinator":
-                        gotoActivity(CoordinatorLayoutActivity.class);
+                    case "qq状态栏变色1":
+                        gotoActivity(QQZhuangTaiLanActivity.class);
                         break;
                     case "fileProvider":
                         gotoActivity(FileProvideActivity.class);
@@ -141,7 +142,9 @@ public class MainActivity extends AppCompatActivity {
                     case "链表":
                         gotoActivity(BaseLinkActivity.class);
                         break;
-
+                    case "behavor":
+                        gotoActivity(BehaviorActivity.class);
+                        break;
                 }
             }
         });

@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".java.customView.dir15.LetterSideActivity">
+    tools:context=".java.customView.dian_hua_bu.LetterSideActivity">
 
-    <com.sup.itg.itgt.java.customView.dir15.LetterSideView
+    <com.sup.itg.itgt.java.customView.dian_hua_bu.LetterSideView
         android:id="@+id/letterView"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
