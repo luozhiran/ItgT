@@ -13,7 +13,7 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            app:layout_behavior=".java.animation.behavior.myappbar.bar.ScrollingViewBehavior">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,42 +53,26 @@
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 
+        <com.sup.itg.itgt.java.animation.behavior.myappbar.ItgAppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <com.google.android.material.appbar.AppBarLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+            <!--            <androidx.appcompat.widget.Toolbar-->
+            <!--                android:id="@+id/toolbar"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="?attr/actionBarSize"-->
+            <!--                app:layout_scrollFlags="scroll"-->
+            <!--                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <!--                app:title="标题" />-->
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:gravity="center"
+                android:text="fsadfasdf"
+                app:layout_scrollFlags="scroll" />
 
-<!--                    <com.google.android.material.appbar.CollapsingToolbarLayout-->
-<!--                        android:id="@+id/collapsing_toolbar"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        app:collapsedTitleGravity="center"-->
-<!--                        app:contentScrim="?attr/colorPrimary"-->
-<!--                        app:expandedTitleGravity="right|bottom"-->
-<!--                        app:expandedTitleMarginEnd="64dp"-->
-<!--                        app:expandedTitleMarginStart="48dp"-->
-<!--                        app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
-
-<!--                        <ImageView-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:scaleType="centerCrop"-->
-<!--                            android:src="@mipmap/ic_launcher"-->
-<!--                            app:layout_collapseMode="parallax" />-->
-
-                        <androidx.appcompat.widget.Toolbar
-                            android:id="@+id/toolbar"
-                            android:layout_width="match_parent"
-                            android:layout_height="?attr/actionBarSize"
-                            app:layout_scrollFlags="scroll"
-                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                            app:title="标题" />
-
-<!--                    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
-
-
-                </com.google.android.material.appbar.AppBarLayout>
+        </com.sup.itg.itgt.java.animation.behavior.myappbar.ItgAppBarLayout>
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
