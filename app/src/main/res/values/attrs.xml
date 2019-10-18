@@ -146,5 +146,29 @@
         <attr name="my_state_liftable" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="SimpleBarLayout_Layout">
+        <attr name="simple_bar_layout_scrollFlags">
+            <flag name="bar_scroll" value="0x1" />
+            <flag name="bar_exitUntilCollapsed" value="0x2" />
+            <flag name="bar_enterAlways" value="0x4" />
+            <flag name="bar_enterAlwaysCollapsed" value="0x8" />
+            <flag name="bar_snap" value="0x10" />
+        </attr>
 
+        <attr name="bar_layout_scrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleBarLayout">
+        <attr name="sbl_elevation" />
+        <attr name="android:background" />
+        <attr name="sbl_expanded" format="boolean" />
+        <attr name="android:keyboardNavigationCluster" />
+        <attr name="android:touchscreenBlocksFocus" />
+        <attr name="liftOnScroll" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NestedScrollBehavior_Layout">
+        <attr name="nsb_behavior_overlapTop" format="dimension" />
+    </declare-styleable>
 </resources>
