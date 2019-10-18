@@ -178,7 +178,7 @@ public class SimpleBehavior extends HeaderSimpleBehavior<SimpleBarLayout> {
                 //回调给外界的,暂时不实现
                 simpleBarLayout.dispatchOffsetUpdaates(getTopAndBottomOffset());
 
-                updateSimpleBarLayoutDrawableState(parent, simpleBarLayout, newOffset, newOffset < curOffset ? -1 : 1, false)
+                updateSimpleBarLayoutDrawableState(parent, simpleBarLayout, newOffset, newOffset < curOffset ? -1 : 1, false);
             }
         } else {
             offsetDelta = 0;
