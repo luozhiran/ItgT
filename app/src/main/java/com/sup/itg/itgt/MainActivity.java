@@ -36,6 +36,7 @@ import com.sup.itg.itgt.java.customView.provide_test.FileProvideActivity;
 import com.sup.itg.itgt.java.customView.huawenzi.ViewActivity;
 import com.sup.itg.itgt.java.mvvm.KMvvmActivity;
 import com.sup.itg.itgt.java.mvvm.MvvmActivity;
+import com.sup.itg.itgt.java.web.WebActivity;
 import com.sup.itg.viewinject.ContentView;
 import com.sup.itg.viewinject.ViewInject;
 import com.sup.itg.viewinject.ViewInjectUtils;
@@ -144,6 +145,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "behavor":
                         gotoActivity(BehaviorActivity.class);
+                        break;
+                    case "web":
+                        gotoActivity(WebActivity.class);
                         break;
                 }
             }

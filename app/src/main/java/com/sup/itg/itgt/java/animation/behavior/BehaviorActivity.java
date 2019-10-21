@@ -14,13 +14,13 @@ public class BehaviorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         DataBindingUtil.setContentView(this, R.layout.activity_behavior_custom);
+//         DataBindingUtil.setContentView(this, R.layout.activity_behavior_custom);
 //        DataBindingUtil.setContentView(this, R.layout.activity_behavior);
 //
 //        DataBindingUtil.setContentView(this, R.layout.activity_behavior_spefic);
 //        DataBindingUtil.setContentView(this, R.layout.activity_behavior_spefic1);
 
-//        DataBindingUtil.setContentView(this, R.layout.activity_behavior_my);
+        DataBindingUtil.setContentView(this, R.layout.activity_behavior_my);
 
     }
 }

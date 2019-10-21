@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".java.animation.behavior.BehaviorActivity"></activity>
+        <activity android:name=".java.web.WebActivity"></activity>
+        <activity android:name=".java.animation.behavior.BehaviorActivity" />
         <activity android:name=".java.struct.linkStruct.BaseLinkActivity" />
         <activity android:name=".java.component.dir18.ManifestActivity" />
         <activity android:name=".java.customView.adapter_test.TestItgrActivity" />
