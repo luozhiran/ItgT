@@ -237,6 +237,10 @@ public class SimpleBarLayout extends LinearLayout {
     }
 
 
+    /**
+     * default 2
+     * @return
+     */
     public int getPendingAction() {
         return pendingAction;
     }

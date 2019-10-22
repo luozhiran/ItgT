@@ -70,9 +70,9 @@ public abstract class HeaderScrollingViewBehavior extends CoordinatorLayout.Beha
 
             Rect available = mTempRect1;
             int left = parent.getPaddingLeft() + lp.leftMargin;
-            int top = parent.getPaddingTop() + lp.topMargin;
+            int top = dependencyView.getBottom() + lp.topMargin;
             int right = parent.getWidth() - parent.getPaddingRight() - lp.rightMargin;
-            int bottom = parent.getHeight() - parent.getPaddingBottom() - lp.bottomMargin;
+            int bottom = parent.getHeight()+dependencyView.getBottom() - parent.getPaddingBottom() - lp.bottomMargin;
             available.set(left, top, right, bottom);
             WindowInsetsCompat parentInsets = parent.getLastWindowInsets();
             if (parentInsets != null && ViewCompat.getFitsSystemWindows(parent) && !ViewCompat.getFitsSystemWindows(child)) {
