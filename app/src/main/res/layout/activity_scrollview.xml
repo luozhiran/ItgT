@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".java.customView.dir14.ScrollviewActivity">
+    tools:context=".java.customView.qq_hua_dong_caidan.ScrollviewActivity">
 
-    <com.sup.itg.itgt.java.customView.dir14.SlideMenu
+    <com.sup.itg.itgt.java.customView.qq_hua_dong_caidan.SlideMenu
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@mipmap/home_menu_bg"
@@ -21,6 +21,6 @@
 
             <include layout="@layout/slide_content_layout" />
         </LinearLayout>
-    </com.sup.itg.itgt.java.customView.dir14.SlideMenu>
+    </com.sup.itg.itgt.java.customView.qq_hua_dong_caidan.SlideMenu>
 
 </RelativeLayout>

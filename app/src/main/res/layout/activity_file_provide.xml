@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".java.customView.dir8.FileProvideActivity">
+    tools:context=".java.customView.provide_test.FileProvideActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

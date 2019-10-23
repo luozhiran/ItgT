@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".java.customView.dir13.RatingActivity">
+    tools:context=".java.customView.5_xing_view.RatingActivity">
 
-    <com.sup.itg.itgt.java.customView.dir13.RatingBarView
+    <com.sup.itg.itgt.java.customView.5_xing_view.RatingBarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:rbGrade="2"

@@ -8,9 +8,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".java.customView.dir6.ShadowActivity">
+        tools:context=".java.customView.yinying.ShadowActivity">
 
-        <com.sup.itg.itgt.java.customView.dir6.test.BaseShadowView
+        <com.sup.itg.itgt.java.customView.yinying.test.BaseShadowView
             android:id="@+id/shadowView"
             android:layout_width="300dp"
             android:layout_height="200dp"
@@ -25,7 +25,7 @@
             app:tshadowRadius="3dp"
             tools:ignore="MissingConstraints" />
 
-        <com.sup.itg.itgt.java.customView.dir6.test.BaseMaskFilterView
+        <com.sup.itg.itgt.java.customView.yinying.test.BaseMaskFilterView
             android:id="@+id/baseMask"
             android:layout_width="300dp"
             android:layout_height="200dp"
@@ -39,7 +39,7 @@
             app:maskRadius="10dp"
             app:openMaskFilter="true" />
 
-        <com.sup.itg.itgt.java.customView.dir6.test.BaseImgMaskFilterView
+        <com.sup.itg.itgt.java.customView.yinying.test.BaseImgMaskFilterView
             android:id="@+id/baseImgMaskFilterView"
             android:layout_width="300dp"
             android:layout_height="200dp"
@@ -53,7 +53,7 @@
             app:maskRadius="20dp"
             app:openMaskFilter="true" />
 
-        <com.sup.itg.itgt.java.customView.dir6.ShadowLayout
+        <com.sup.itg.itgt.java.customView.yinying.ShadowLayout
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:layout_marginTop="20dp"
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="fasdfasdgsdag" />
-        </com.sup.itg.itgt.java.customView.dir6.ShadowLayout>
+        </com.sup.itg.itgt.java.customView.yinying.ShadowLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

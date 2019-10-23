@@ -69,46 +69,106 @@
     </declare-styleable>
 
     <declare-styleable name="MyTextView">
-        <attr name="iTextSize" format="dimension"/>
-        <attr name="iTextColor" format="color"/>
-        <attr name="iText" format="string"/>
+        <attr name="iTextSize" format="dimension" />
+        <attr name="iTextColor" format="color" />
+        <attr name="iText" format="string" />
     </declare-styleable>
 
     <declare-styleable name="RingProgressBar">
 
-        <attr name="irBorderWidth" format="dimension"/>
-        <attr name="irOutColor" format="color"/>
-        <attr name="irInColor" format="color"/>
-        <attr name="irTextSize" format="dimension"/>
-        <attr name="irMaxProgressValue" format="integer"/>
-        <attr name="irProgress" format="integer"/>
-        <attr name="irTextColor" format="color"/>
+        <attr name="irBorderWidth" format="dimension" />
+        <attr name="irOutColor" format="color" />
+        <attr name="irInColor" format="color" />
+        <attr name="irTextSize" format="dimension" />
+        <attr name="irMaxProgressValue" format="integer" />
+        <attr name="irProgress" format="integer" />
+        <attr name="irTextColor" format="color" />
 
     </declare-styleable>
 
     <declare-styleable name="HorProgressView">
-        <attr name="hpBackground" format="color"/>
-        <attr name="hpColor" format="color"/>
-        <attr name="hpTextColor" format="color"/>
-        <attr name="hpTextSize" format="dimension"/>
-        <attr name="hpCap" format="boolean"/>
-        <attr name="hpProgress" format="integer"/>
-        <attr name="hpMaxProgress" format="integer"/>
+        <attr name="hpBackground" format="color" />
+        <attr name="hpColor" format="color" />
+        <attr name="hpTextColor" format="color" />
+        <attr name="hpTextSize" format="dimension" />
+        <attr name="hpCap" format="boolean" />
+        <attr name="hpProgress" format="integer" />
+        <attr name="hpMaxProgress" format="integer" />
     </declare-styleable>
 
     <declare-styleable name="RatingBarView">
 
-        <attr name="rbRatingNum" format="integer"/>
-        <attr name="rbGrade" format="integer"/>
-        <attr name="rbZeroGradeIcon" format="reference"/>
-        <attr name="rbGradeIcon" format="reference"/>
+        <attr name="rbRatingNum" format="integer" />
+        <attr name="rbGrade" format="integer" />
+        <attr name="rbZeroGradeIcon" format="reference" />
+        <attr name="rbGradeIcon" format="reference" />
 
     </declare-styleable>
 
     <declare-styleable name="LetterSideView">
 
-        <attr name="lsTextSize" format="dimension"/>
-        <attr name="lsTextColor" format="color"/>
-        <attr name="lsLightTextColor" format="color"/>
+        <attr name="lsTextSize" format="dimension" />
+        <attr name="lsTextColor" format="color" />
+        <attr name="lsLightTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="My_AppBarLayout_Layout">
+        <attr name="my_layout_scrollFlags">
+            <flag name="my_scroll" value="0x1" />
+            <flag name="my_exitUntilCollapsed" value="0x2" />
+            <flag name="my_enterAlways" value="0x4" />
+            <flag name="my_enterAlwaysCollapsed" value="0x8" />
+            <flag name="my_snap" value="0x10" />
+            <flag name="my_snapMargins" value="0x20" />
+        </attr>
+        <attr name="my_layout_scrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyAppBarLayout">
+        <attr name="my_elevation" />
+        <attr name="android:background" />
+        <attr name="my_expanded" format="boolean" />
+        <attr name="android:keyboardNavigationCluster" />
+        <attr name="android:touchscreenBlocksFocus" />
+        <attr name="my_liftOnScroll" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MyScrollingViewBehavior">
+        <attr name="my_behavior_overlapTop" format="dimension" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MyAppBarLayoutStates">
+        <attr name="my_state_collapsed" format="boolean" />
+        <attr name="my_state_collapsible" format="boolean" />
+        <attr name="my_state_lifted" format="boolean" />
+        <attr name="my_state_liftable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleBarLayout_Layout">
+        <attr name="simple_bar_layout_scrollFlags">
+            <flag name="bar_scroll" value="0x1" />
+            <flag name="bar_exitUntilCollapsed" value="0x2" />
+            <flag name="bar_enterAlways" value="0x4" />
+            <flag name="bar_enterAlwaysCollapsed" value="0x8" />
+            <flag name="bar_snap" value="0x10" />
+        </attr>
+
+        <attr name="bar_layout_scrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleBarLayout">
+        <attr name="sbl_elevation" />
+        <attr name="android:background" />
+        <attr name="sbl_expanded" format="boolean" />
+        <attr name="android:keyboardNavigationCluster" />
+        <attr name="android:touchscreenBlocksFocus" />
+        <attr name="liftOnScroll" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NestedScrollBehavior_Layout">
+        <attr name="nsb_behavior_overlapTop" format="dimension" />
     </declare-styleable>
 </resources>

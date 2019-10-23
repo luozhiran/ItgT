@@ -24,7 +24,7 @@
     "pic": "ic_launcher"
   },
   {
-    "name": "coordinator",
+    "name": "qq状态栏变色1",
     "pic": "ic_launcher"
   },
   {
@@ -92,7 +92,11 @@
     "pic": "ic_launcher"
   },
   {
-    "name": "贝瑟尔",
+    "name": "behavor",
+    "pic": "ic_launcher"
+  },
+  {
+    "name": "web",
     "pic": "ic_launcher"
   }
 
