@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.alibaba.fastjson.JSON;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.sup.itg.itgt.java.animation.matrix.MatrixActivity;
+import com.sup.itg.itgt.java.customView.bethel.BethelActivity;
 import com.sup.itg.itgt.java.customView.dir13.ProgressActivity;
 import com.sup.itg.itgt.java.customView.dir14.ScrollviewActivity;
 import com.sup.itg.itgt.java.customView.dir10.ProgressBarActivity;
@@ -140,6 +141,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "链表":
                         gotoActivity(BaseLinkActivity.class);
+                        break;
+                    case "贝瑟尔":
+                        gotoActivity(BethelActivity.class);
                         break;
 
                 }

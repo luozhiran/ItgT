@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".java.customView.bethel.BethelActivity"></activity>
         <activity android:name=".java.struct.linkStruct.BaseLinkActivity" />
         <activity android:name=".java.component.dir18.ManifestActivity" />
         <activity android:name=".java.customView.dir17.TestItgrActivity" />

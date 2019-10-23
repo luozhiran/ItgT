@@ -61,7 +61,7 @@ public class ViewDrawViewActivity extends ItgHandlerActivity {
     }
 
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class GViewHolder extends RecyclerView.ViewHolder {
 
 
         public ViewHolder(@NonNull View itemView) {
